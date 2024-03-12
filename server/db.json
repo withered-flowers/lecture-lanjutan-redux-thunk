@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Kemeja Extra Fine Cotton Garis Lengan Panjang",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/464805/item/idgoods_51_464805.jpg?width=750",
+      "price": 299000,
+      "stock": 30
+    },
+    {
+      "id": 2,
+      "name": "Kemeja Extra Fine Cotton Lengan Panjang",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/464804/item/idgoods_31_464804.jpg?width=750",
+      "price": 299000,
+      "stock": 20
+    },
+    {
+      "id": 3,
+      "name": "Blus Rayon Dasi Pita Lengan Panjang",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/464801/item/idgoods_02_464801.jpg?width=750",
+      "price": 299000,
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "name": "Kaos Polo Dry Pique Garis Lengan Pendek",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/466816/item/idgoods_69_466816.jpg?width=750",
+      "price": 199000,
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "name": "Kaos Polo Dry Pique Lengan Pendek",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/455388/item/idgoods_00_455388.jpg?width=750",
+      "price": 199000,
+      "stock": 15
+    },
+    {
+      "id": 6,
+      "name": "Kaos Polo Dry Pique Tipping Lengan Pendek",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/469052/item/idgoods_00_469052.jpg?width=750",
+      "price": 199000,
+      "stock": 10
+    },
+    {
+      "id": 7,
+      "name": "Kaos Polo Dry Pique Garis Lengan Pendek",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/465195/item/idgoods_69_465195.jpg?width=750",
+      "price": 199000,
+      "stock": 20
+    },
+    {
+      "id": 8,
+      "name": "T-Shirt Waffle Kerah Bulat Lengan Panjang",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449860/item/idgoods_53_449860.jpg?width=750",
+      "price": 199000,
+      "stock": 17
+    },
+    {
+      "id": 9,
+      "name": "T-Shirt Katun Lembut Garis Kelim Bulat Lengan 3/4",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/467197/item/idgoods_01_467197.jpg?width=750",
+      "price": 199000,
+      "stock": 18
+    },
+    {
+      "id": 10,
+      "name": "T-Shirt Fleece Rajut Lembut Kerah Bulat Lengan Panjang",
+      "imgUrl": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/461776/item/goods_52_461776.jpg?width=750",
+      "price": 299000,
+      "stock": 20
+    }
+  ]
+}
