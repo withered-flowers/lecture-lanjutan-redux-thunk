@@ -1,26 +1,49 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Button, Card, Col, Row } from "react-bootstrap";
-import renderPrice from "../utils/renderPrice";
+import { useEffect } from "react";
+// import axios from "axios";
+import { Button, Row } from "react-bootstrap";
+// import renderPrice from "../utils/renderPrice";
 import ProductCard from "../components/ProductCard";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  // fetchDataProductsFulfilled,
+  // fetchDataProductsPending,
+  // fetchDataProductsRejected,
+  fetchProducts,
+} from "../store/productSlice";
 
 export default function ProductPage() {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
+  // ! Balikin suatu Function !
+  const dispatcher = useDispatch();
+  const { products } = useSelector((state) => state.barang);
 
   useEffect(() => {
-    fetchProducts();
-  }, []);
+    // const fetchProducts = async () => {
+    //   try {
+    //     dispatcher(fetchDataProductsPending());
 
-  const fetchProducts = async () => {
-    try {
-      const { data } = await axios({
-        url: "http://localhost:3001/products",
-      });
-      setProducts(data || []);
-    } catch (error) {
-      console.log(error, "<<< An error while fetch products");
-    }
-  };
+    //     // Dispatch => suatu Function yang hanya bisa membaca Action
+    //     // - Action itu adalah suatu Plain Objacet
+    //     // - Yang isinya adalah Type dan Payload
+
+    //     // HTTP Status Code = 2xx dan 3xx
+    //     // HTTP Status Code = 4xx dan 5xx
+    //     const { data } = await axios({
+    //       url: "http://localhost:3001/products",
+    //     });
+
+    //     dispatcher(fetchDataProductsFulfilled(data || []));
+    //     // setProducts(data || []);
+    //   } catch (error) {
+    //     dispatcher(fetchDataProductsRejected(error));
+    //     console.log(error, "<<< An error while fetch products");
+    //   }
+    // };
+
+    // fetchProducts();
+    dispatcher(fetchProducts());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="px-4 ">
