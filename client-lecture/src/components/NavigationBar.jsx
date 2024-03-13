@@ -1,9 +1,13 @@
 import { Navbar, Nav, Badge } from "react-bootstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 import imgCart from "../assets/cart.png";
+import { useSelector } from "react-redux";
 
 export default function NavigationBar() {
   const navigate = useNavigate();
+  const carts = useSelector((state) => state.cart.productCarts);
+
+  console.log(carts, "<<< carts");
 
   return (
     <Navbar bg="light" data-bs-theme="light" className="m-2">
@@ -45,7 +49,7 @@ export default function NavigationBar() {
             }}
             bg={"danger"}
           >
-            0
+            {carts.length}
           </Badge>
         </div>
       </Navbar.Collapse>
